@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$ whoami - Justin Developer</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="matrix-bg" id="matrix"></div>
+
+    <nav class="terminal-nav">
+      <div class="nav-terminal">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <div class="terminal-title">justin@portfolio:~</div>
+        </div>
+        <div class="nav-content">
+          <div class="nav-prompt">
+            <span class="prompt">$</span>
+            <span>ls -la sections/</span>
+            <div class="nav-links">
+              <a href="#home">home</a>
+              <a href="#about">about</a>
+              <a href="#projects">projects</a>
+              <a href="#services">services</a>
+              <a href="#contact">contact</a>
+            </div>
+            <span class="cursor">|</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="konami">
+<div id="dev-panel" style="display: none;">
+  <h2>Hacker Panel</h2>
+  <p>Congratulations, you’ve unlocked Konami Mode!</p>
+  <ul>
+
+    <li>
+      <a href="https://github.com/justinoakenfull" target="_blank" style="color: var(--syntax-yellow);">
+        GitHub Profile
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="copyEmail(event)" style="color: var(--syntax-yellow);">
+        Copy Email
+      </a>
+    </li>
+  </ul>
+  <button onclick="toggleKonamiMode()">Exit Developer Mode</button>
+</div>
+    </section>
+
+    <section id="home" class="hero">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <div class="terminal-title">terminal - justin@dev-machine</div>
+        </div>
+        <div class="terminal-content">
+          <div class="terminal-line">
+            <span class="prompt">justin@dev-machine:~$</span>
+            <span class="command">whoami</span>
+          </div>
+          <div class="terminal-line output">Software Developer</div>
+
+          <div class="terminal-line">
+            <span class="prompt">justin@dev-machine:~$</span>
+            <span class="command">cat about.txt</span>
+          </div>
+          <div class="ascii-art">
+            <pre>╔══════════════════════════════════════╗<br>
+║     JUSTIN OAKENFULL - DEVELOPER     ║<br>
+║                                      ║<br>
+║  Languages: Python, C/C++, JS, SQL   ║<br>
+║  Frontend:  HTML5, CSS3, Bootstrap   ║<br>
+║             Leaflet, Jinja           ║<br>
+║  Backend:   Django, Flask, FastAPI   ║<br>
+║  DevOps:    Git, Docker, GH Actions  ║<br>
+║                                      ║<br>
+║  Status: Continually learning        ║<br>
+╚══════════════════════════════════════╝</pre>
+          </div>
+
+          <div class="terminal-line">
+            <span class="prompt">justin@dev-machine:~$</span>
+            <span class="command typing-animation"
+              >git commit -m "Ready to innovate"</span
+            >
+          </div>
+          <div class="terminal-line output">
+            <span class="typing-output"
+            >[main 47a8c2e] Ready to innovate</span>
+          </div>
+          <div class="terminal-line output">
+            <span class="typing-output"
+            >1 file changed, ∞ possibilities created</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="code-block">
+        <div class="code-header">
+          <div class="terminal-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <div class="file-name">skills.js</div>
+        </div>
+        <div class="code-content">
+<div class="line-numbers">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</div>
+                <div class="code-text"><span class="keyword">const</span> <span class="function">developer</span> <span class="operator">=</span> {
+  <span class="string">"name"</span>: <span class="string">"Justin Oakenfull"</span>,
+  <span class="string">"role"</span>: <span class="string">"Full-Stack Developer"</span>,
+  <span class="string">"languages"</span>: [<span class="string">"Python"</span>, <span class="string">"JavaScript"</span>,<span class="string">"C"</span>, <span class="string">"C++"</span>, <span class="string">"Java"</span>, <span class="string">"SQL"</span>],
+  <span class="string">"frontend"</span>: [<span class="string">"HTML5"</span>, <span class="string">"CSS3"</span>, <span class="string">"Bootstrap"</span>, <span class="string">"Leaflet"</span>, <span class="string">"Jinja"</span>],
+  <span class="string">"backend"</span>: [<span class="string">"Django"</span>, <span class="string">"Flask"</span>, <span class="string">"FastAPI"</span>],
+  <span class="string">"databases"</span>: [<span class="string">"PostgreSQL"</span>, <span class="string">"MySQL"</span>,<span class="string">"SQLite"</span>, <span class="string">"MongoDB"</span>],
+  <span class="string">"devops"</span>: [<span class="string">"Git"</span>, <span class="string">"Docker"</span>, <span class="string">"GitHub Actions"</span>, <span class="string">"Linux"</span>],
+  <span class="string">"tools"</span>: [<span class="string">"VS Code"</span>, <span class="string">"Jupyter"</span>, <span class="string">"Unreal Engine 5"</span>, <span class="string">"Wireshark"</span>],
+
+  <span class="function">getSkillLevel</span>(<span class="string">skill</span>) {
+    <span class="keyword">return</span> <span class="keyword">this</span>.languages.includes(<span class="string">skill</span>) 
+      ? <span class="string">"Expert"</span> 
+      : <span class="string">"Learning"</span>;
+  },
+
+  <span class="function">deploy</span>() {
+    <span class="keyword">return</span> <span class="string">"Ready for production!"</span>;
+  }
+};</div>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+                </div>
+                <div class="terminal-title">frontend.sh</div>
+            </div>
+
+            <div class="skill-content">
+                <div class="skill-command">$ npm run skills --frontend</div>
+
+                <!-- Updated top-three front-end skills -->
+                <div class="skill-output">HTML5&nbsp;&nbsp;██████████ 81%</div>
+                <div class="skill-output">CSS3&nbsp;&nbsp;█████████ 76%</div>
+                <div class="skill-output">Jinja&nbsp;&nbsp;████████ 72%</div>
+
+                <div class="progress-bar">
+                <div class="progress-fill" style="width: 76.33%"></div>
+                </div>
+            </div>
+            </div>
+
+        <div class="skill-terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="terminal-title">backend.sh</div>
+            </div>
+
+            <div class="skill-content">
+                <div class="skill-command">$ npm run skills --backend</div>
+
+                <div class="skill-output">Django&nbsp;&nbsp;&nbsp;██████████ 85%</div>
+                <div class="skill-output">ASP.NET&nbsp;████████ 75%</div>
+                <div class="skill-output">REST&nbsp;API&nbsp;███████ 70%</div>
+
+                <div class="progress-bar">
+                <div class="progress-fill" style="width: 76%"></div>
+                </div>
+            </div>
+            </div>
+
+        <div class="skill-terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="terminal-title">languages.sh</div>
+            </div>
+
+            <div class="skill-content">
+                <div class="skill-command">$ npm run skills --languages</div>
+
+                <div class="skill-output">Python&nbsp;&nbsp;██████████ 85%</div>
+                <div class="skill-output">C#&nbsp;&nbsp;&nbsp;&nbsp;█████████ 80%</div>
+                <div class="skill-output">C++&nbsp;&nbsp;&nbsp;███████ 70%</div>
+
+                <div class="progress-bar">
+                <div class="progress-fill" style="width: 78%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="terminal-title">databases.sh</div>
+            </div>
+
+            <div class="skill-content">
+                <div class="skill-command">$ npm run skills --databases</div>
+
+                <div class="skill-output">PostgreSQL&nbsp;████████ 80%</div>
+                <div class="skill-output">SQLite&nbsp;&nbsp;&nbsp;&nbsp;███████ 75%</div>
+                <div class="skill-output">SQL Server ███████ 70%</div>
+
+                <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="terminal-title">devops.sh</div>
+            </div>
+
+            <div class="skill-content">
+                <div class="skill-command">$ npm run skills --devops</div>
+
+                <div class="skill-output">Git&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██████████ 85%</div>
+                <div class="skill-output">GitHub Actions ███████ 60%</div>
+                <div class="skill-output">Docker&nbsp;&nbsp;███████ 70%</div>
+
+                <div class="progress-bar">
+                <div class="progress-fill" style="width: 71%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="terminal-title">tools.sh</div>
+            </div>
+
+            <div class="skill-content">
+                <div class="skill-command">$ npm run skills --tools</div>
+
+                <div class="skill-output">VS Code&nbsp;███████████ 90%</div>
+                <div class="skill-output">Jupyter&nbsp;████████ 80%</div>
+                <div class="skill-output">Wireshark ████████ 75%</div>
+
+                <div class="progress-bar">
+                <div class="progress-fill" style="width: 82%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="code-block">
+        <div class="code-header">
+          <div class="terminal-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <div class="file-name">featured-projects.md</div>
+        </div>
+        <div class="code-content">
+          <h2 style="color: var(--syntax-purple); margin-bottom: 2rem">
+            # Featured Projects
+          </h2>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-repo">
+          <div class="repo-header">
+            <div class="repo-name">⛏️ orefox-sdms</div>
+            <div class="repo-description">
+              Spatial Data Management System - Capstone Project
+            </div>
+            <div class="repo-stats">
+              <div class="stat">
+                <div class="language-dot python"></div>
+                Python
+              </div>
+              <div class="stat">
+                <div class="language-dot javascript"></div>
+                JavaScript
+              </div>
+              <div class="stat">
+                <div class="language-dot" style="background: #4db33d"></div>
+                Django
+              </div>
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="docker-command">
+              <span class="comment"># Description</span><br />
+              SDMS integrated into GeoDesk, enabling map-based upload,
+              clustering, and retrieval of geographic documents for OreFox AI
+            </div>
+            <div class="docker-command">
+              <span class="comment"># Key technologies</span><br />
+              Django • Leaflet.js • PostGIS • PostgreSQL • JavaScript
+            </div>
+          </div>
+        </div>
+
+        <div class="project-repo">
+          <div class="repo-header">
+            <div class="repo-name">📈 portfolio-simulator</div>
+            <div class="repo-description">
+              Portfolio Simulation project - Mini Capstone
+            </div>
+            <div class="repo-stats">
+              <div class="stat">
+                <div class="language-dot" style="background: #b07219"></div>
+                Java
+              </div>
+              <div class="stat">
+                <div class="language-dot" style="background: #007396"></div>
+                JavaFX
+              </div>
+              <div class="stat">
+                <div class="language-dot" style="background: #003b57"></div>
+                SQLite
+              </div>
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="docker-command">
+              <span class="comment"># Description</span><br />
+              Simulates stock portfolio performance using JavaFX for
+              visualization, live price feeds, and user-driven trades
+            </div>
+            <div class="docker-command">
+              <span class="comment"># Key technologies</span><br />
+              Java • JavaFX • JDBC • SQLite • JUnit • Json
+            </div>
+          </div>
+        </div>
+
+        <div class="project-repo">
+          <div class="repo-header">
+            <div class="repo-name">🪐 orbit-family-hub</div>
+            <div class="repo-description">
+              Open-source family hub app - Personal Project
+            </div>
+            <div class="repo-stats">
+              <div class="stat">
+                <div class="language-dot" style="background: #ff7b72"></div>
+                Shared Calendar
+              </div>
+              <div class="stat">
+                <div class="language-dot" style="background: #f0c674"></div>
+                Collaborative Lists
+              </div>
+              <div class="stat">
+                <div class="language-dot" style="background: #79c0ff"></div>
+                Gamified Tasks
+              </div>
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="docker-command">
+              <span class="comment"># Description</span><br />
+              Orbit runs on a 27″ Android touchscreen, offering a unified view
+              of family events, to-dos, and notes with intuitive drag-and-drop
+              and widget support
+            </div>
+            <div class="docker-command">
+              <span class="comment"># Key features</span><br />
+              Real-time sync • Offline caching • Customizable widgets • Voice
+              reminders • Modular plugin architecture
+            </div>
+          </div>
+        </div>
+
+        <div class="project-repo">
+  <div class="repo-header">
+    <div class="repo-name">🧠 alzheimer-ml-classifier</div>
+    <div class="repo-description">
+      Vision Transformer–based Alzheimer’s stage classifier
+    </div>
+    <div class="repo-stats">
+      <div class="stat">
+        <div class="language-dot python"></div>
+        Python
+      </div>
+      <div class="stat">
+        <div class="language-dot" style="background: #ee4c2c;"></div>
+        PyTorch
+      </div>
+      <div class="stat">
+        <div class="language-dot" style="background: #79c0ff;"></div>
+        ViT
+      </div>
+    </div>
+  </div>
+  <div class="skill-content">
+    <div class="docker-command">
+      <span class="comment"># Description</span><br>
+      Implements a Vision Transformer pipeline that classifies dementia stages (mild, moderate, non-demented, very mild) with over 97% test accuracy
+    </div>
+    <div class="docker-command">
+      <span class="comment"># Key features</span><br>
+      Data augmentation • PyTorch Lightning • Learning-rate scheduling • Model checkpointing • Classification reports
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="code-block">
+        <div class="code-header">
+          <div class="terminal-dots">
+            <div class="dot red"></div>
+
+            <div class="dot yellow"></div>
+
+            <div class="dot green"></div>
+          </div>
+
+          <div class="file-name">docker-compose.yml</div>
+        </div>
+
+        <div class="code-content">
+          <h2 style="color: var(--syntax-orange); margin-bottom: 2rem">
+            # Development Environment Services
+          </h2>
+        </div>
+      </div>
+
+    <div class="docker-grid">
+
+        <div class="docker-container">
+            <div class="container-header">
+                <div class="container-status">
+                <div class="status-indicator"></div>
+                <span style="color: var(--terminal-green)">RUNNING</span>
+                </div>
+                <div class="container-name">speedtest-tracker</div>
+            </div>
+
+            <div class="container-body">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem">
+                Self-hosted dashboard that logs Internet speed every 30 minutes
+                </p>
+
+                <div class="docker-command">
+                $ docker run -d --name speedtest-tracker -p 8080:80 \
+                ghcr.io/alexjustesen/speedtest-tracker:latest
+                </div>
+
+                <a
+                href="http://speed.oakenfull.com.au"
+                class="container-link"
+                target="_blank"
+                >
+                → Open Speedtest Tracker
+                </a>
+            </div>
+        </div>
+
+        <div class="docker-container">
+            <div class="container-header">
+                <div class="container-status">
+                <div class="status-indicator"></div>
+                <span style="color: var(--terminal-green)">RUNNING</span>
+                </div>
+                <div class="container-name">penpot</div>
+            </div>
+
+            <div class="container-body">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem">
+                AUTOMATIC1111 Stable Diffusion Web UI for local image generation
+                </p>
+
+                <div class="docker-command">
+                  $ docker run -d --name penpot-frontend -p 9001:8080 \
+                  ghcr.io/penpotapp/frontend:latest
+                </div>
+
+                <a
+                href="https://penpot.oakenfull.com.au"
+                class="container-link"
+                target="_blank"
+                >
+                → Open Penpot
+                </a>
+            </div>
+        </div>
+        
+        <div class="docker-container">
+            <div class="container-header">
+                <div class="container-status">
+                <div class="status-indicator"></div>
+                <span style="color: var(--terminal-green)">RUNNING</span>
+                </div>
+                <div class="container-name">cf-ddns-updater</div>
+            </div>
+
+            <div class="container-body">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem">
+                Headless container that keeps Cloudflare DNS in sync with your public IP
+                </p>
+
+                <div class="docker-command">
+                $ docker run -d --name cf-ddns \
+                -e CF_API_TOKEN=&lt;token&gt; -e ZONE=oakenfull.com.au \
+                -e SUBDOMAIN=* oznu/cloudflare-ddns:latest
+                </div>
+
+                <!-- No public UI, so no link -->
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact-terminal">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <div class="dot red"></div>
+
+            <div class="dot yellow"></div>
+
+            <div class="dot green"></div>
+          </div>
+
+          <div class="terminal-title">contact.sh</div>
+        </div>
+
+        <div class="contact-content">
+          <div class="terminal-line">
+            <span class="prompt">justin@dev-machine:~$</span>
+
+            <span class="command">./contact.sh --show-all</span>
+          </div>
+
+          <div class="terminal-line output" style="margin-top: 1rem">
+            <span style="color: var(--syntax-purple)">#!/bin/bash</span>
+          </div>
+
+          <div class="terminal-line output">
+            <span class="comment"
+              ># Let's connect and build something amazing together</span
+            >
+          </div>
+
+          <div class="contact-links">
+            <div class="terminal-line">
+              <span class="prompt">$</span>
+
+            <a href="#" class="contact-link" onclick="copyEmail(event)">echo "justin@oakenfull.com.au" | mail</a>
+            </div>
+
+            <div class="terminal-line">
+              <span class="prompt">$</span>
+
+              <a
+                href="https://github.com/justinoakenfull"
+                class="contact-link"
+                target="_blank"
+                >git clone github.com/justinoakenfull</a
+              >
+            </div>
+
+            <div class="terminal-line">
+              <span class="prompt">$</span>
+
+              <a
+                href="https://linkedin.com/in/justin-oakenfull"
+                class="contact-link"
+                target="_blank"
+                >curl -X GET linkedin.com/in/justin-oakenfull</a
+              >
+            </div>
+          </div>
+
+          <div class="terminal-line" style="margin-top: 2rem">
+            <span class="prompt">justin@dev-machine:~$</span>
+
+            <span style="color: var(--syntax-yellow)">exit 0</span>
+
+            <span class="cursor">|</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="home.js"></script>
+  </body>
+</html>
