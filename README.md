@@ -1,4 +1,4 @@
-# 🧑‍💻 oakenfull.com.au — Personal Developer Portfolio
+# oakenfull.com.au — Personal Developer Portfolio
 
 Welcome to the source code for [oakenfull.com.au](https://oakenfull.com.au), a terminal-themed portfolio for Justin Oakenfull — Full-Stack Developer, open source contributor, and lifelong learner.
 
